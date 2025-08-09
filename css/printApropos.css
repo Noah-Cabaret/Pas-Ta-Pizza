@@ -1,0 +1,228 @@
+    body {
+        margin: 0; /* Réinitialisation des marges pour éviter les écarts */
+        margin-top: 110px;
+    }
+
+    @font-face {
+        font-family: 'titre';
+        src: url("../fonts/BerkshireSwash-Regular.ttf");
+    }
+
+    .bandeStatique {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        z-index: 2; /*on lui donne une plus grande valeur pour qu'il soit au premier plan*/
+
+    }
+
+    .logo img {
+        padding-top: 5px;
+        height: 75px;
+    }
+
+    .nom-du-restaurant {
+        font-family: 'titre';
+        flex: 1; /* Le texte prendra tout l'espace restant */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centrer horizontalement */
+
+    }
+
+    .nom-du-restaurant h1 {
+        margin: 0; /* Supprimer les marges par défaut du titre */
+        font-size: 45px; /* Taille de police du titre */
+        color: black; /* Couleur du texte */
+        padding-right: 8%;
+        justify-content: center;
+    }
+
+    .petiteBandeTricolore {
+        position: fixed;
+        z-index: 1; /*on lui donne une plus petite valeur pour qu'il soit au second  plan*/
+        top: 60px; /* Ajustez cette valeur pour aligner correctement la bande */
+        width: 100%;
+        height: 20px; /* Hauteur de la bande blanche */
+        background-color: #ffffff; /* Couleur blanche */
+        border-bottom: 15px solid #a9151d; /* Bordure blanche en dessous de la couleur verte */
+        border-top: 15px solid #134f2b; /* Bordure rouge au-dessus de la couleur verte */
+    }
+
+    .petiteBandeTricolore {
+        display: flex;
+        justify-content: space-between;
+    }
+    .petiteBandeTricolore a {
+        margin-left: 100px; /* ajoute un espace entre la marge de la page et le lien*/
+        margin-right: 100px;
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #000000; /* Couleur des liens */
+        font-weight: bold;
+    }
+    .petiteBandeTricolore .lienP {
+        margin-left: 100px; /* ajoute un espace entre la marge de la page et le lien*/
+        margin-right: 100px;
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #e0c389; /* Couleur des liens */
+        font-weight: bold;
+    }
+
+
+    .petiteBandeTricolore a:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+    footer {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Pour centrer horizontalement les liens */
+        padding: 5px;
+        background-color: #ffffff;
+    }
+
+    .mail, .insta, .tel{
+        font-family: 'Titre';
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center; /* Pour aligner les éléments flexibles verticalement */
+        margin: 0 20px; /* Espacement entre les liens */
+    }
+
+    .logos {
+        width: 20px; /* Taille des logos */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        margin-right: 5px; /* Espacement entre le logo et le texte */
+    }
+
+    .mail:hover, .insta:hover, .tel:hover {
+        color: #000000; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+
+
+.BandeBlanche1{
+    left: 0;
+    right: 0;
+    background-color: white ;
+    height: 400px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.BandeBlanche1 p{
+    color: #918d8f;
+    padding-top: 90px;
+    font-size: 25px;
+}
+.BandeBlanche1 .Titre {
+    font-family: 'Titre';
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.BandeJaune{
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 400px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.BandeJaune .Titre {
+    font-family: 'Titre';
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.BandeJaune p{
+    color: #918d8f;
+    padding-top: 90px;
+    font-size: 25px;
+}
+
+.BandeBlanche2{
+    left: 0;
+    right: 0;
+    background-color: white ;
+    height: 400px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+.BandeBlanche2 .Titre {
+    font-family: 'Titre';
+    padding-top: 50px;
+    font-size: 40px;
+    position: relative;
+    top: 60px;
+}
+.BandeBlanche2 p{
+    position: relative;
+    top: 50px;
+    color: #918d8f;
+    padding-top: 90px;
+    font-size: 25px;
+}
+
+.BandeBleu{
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 400px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.BandeBleu p{
+    color: #918d8f;
+    padding-top: 90px;
+    font-size: 25px;
+}
+
+.BandeBleu .Titre{
+    font-family: 'Titre';
+    padding-top: 50px;
+    font-size: 40px;
+}
+.BandeVerte {
+    margin-top: 450px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 300px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+.BandeVerte .Titre {
+    position: relative;
+    top: 100px;
+    font-family: 'Titre';
+    padding-top: 20px;
+    font-size: 40px;
+    color: #000000;
+}
+.BandeVerte p{
+    position: relative;
+    top: 100px;
+    color: #918d8f;
+    font-size: 25px;
+
+}

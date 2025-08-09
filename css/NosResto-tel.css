@@ -1,0 +1,275 @@
+@media (max-width: 1430px) {
+    body {
+        margin: 0; /* Réinitialisation des marges pour éviter les écarts */
+    }
+
+    @font-face {
+        font-family: 'titre';
+        src: url("../fonts/BerkshireSwash-Regular.ttf");
+    }
+
+    .bandeStatique {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        z-index: 2; /*on lui donne une plus grande valeur pour qu'il soit au premier plan*/
+
+    }
+
+    .logo img {
+        padding-top: 5px;
+        height: 75px;
+    }
+
+    .nom-du-restaurant {
+        font-family: 'titre';
+        flex: 1; /* Le texte prendra tout l'espace restant */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centrer horizontalement */
+    }
+
+    .nom-du-restaurant h1 {
+        margin: 0; /* Supprimer les marges par défaut du titre */
+        font-size: 40px; /* Taille de police du titre */
+        color: black; /* Couleur du texte */
+        padding-right: 9%;
+    }
+
+    .petiteBandeTricolore {
+        position: fixed;
+        z-index: 1; /*on lui donne une plus petite valeur pour qu'il soit au second  plan*/
+        top: 60px; /* Ajustez cette valeur pour aligner correctement la bande */
+        width: 100%;
+        height: 20px; /* Hauteur de la bande blanche */
+        background-color: #ffffff; /* Couleur blanche */
+        border-bottom: 15px solid #a9151d; /* Bordure blanche en dessous de la couleur verte */
+        border-top: 15px solid #134f2b; /* Bordure rouge au-dessus de la couleur verte */
+    }
+
+    .petiteBandeTricolore {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .petiteBandeTricolore a {
+        margin-left: auto; /* ajoute un espace entre la marge de la page et le lien*/
+        margin-right: auto;
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #000000; /* Couleur des liens */
+        font-weight: bold;
+    }
+
+    .petiteBandeTricolore .lienP {
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #e0c389; /* Couleur des liens */
+        font-weight: bold;
+    }
+
+    .petiteBandeTricolore a:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+
+
+
+    footer {
+        margin-top: 22%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Pour centrer horizontalement les liens */
+        padding: 5px;
+        background-color: #134f2b;
+    }
+    .mail, .insta, .tel{
+        font-family: 'Titre';
+        text-decoration: none;
+        color: #ffffff;
+        display: flex;
+        align-items: center; /* Pour aligner les éléments flexibles verticalement */
+        margin: 0 20px; /* Espacement entre les liens */
+    }
+
+    .logos {
+        width: 20px; /* Taille des logos */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        margin-right: 5px; /* Espacement entre le logo et le texte */
+    }
+
+    .mail:hover, .insta:hover, .tel:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+    #cible1 {
+        position: relative;
+        bottom: 210px;
+        left: 95px;
+        display: none;
+
+    }
+    #cible2 {
+        position: relative;
+        bottom:255px;
+        display: none;
+
+        left: 140px;
+    }
+
+
+    #cible3 {
+        position: relative;
+        bottom:170px;
+        left: 190px;
+        display: none;
+    }
+
+
+    #cible4 {
+        display: none;
+
+        position: relative;
+        bottom:210px;
+        left: 85px;
+    }
+
+
+    #cible5 {
+        display: none;
+        position: relative;
+        bottom:325px;
+        left: 200px;
+    }
+    #cible6 {
+        position: relative;
+        bottom:185px;
+        left: 110px;
+        display: none;
+
+    }
+    .resto {
+        width: 120px;
+    }
+    #cadre {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    #carte {
+        width: 300px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+    }
+    #france {
+        border:3px solid green ;
+        border-radius: 5%;
+        width: 300px;
+        z-index: 1;
+        display: none;
+
+    }
+
+
+    #conteneur {
+        position: relative;
+        height: 200px;
+        margin-bottom: 50px;
+        margin-left: 7%;
+
+    }
+    #conteneur2{
+        position: relative;
+        height: 200px;
+        margin-bottom: 50px;
+        margin-left: 7%;
+
+    }
+
+    .iconeMenu {
+        display: flex;
+        width: 30px; /* Largeur de l'icône du menu */
+        height: 20px; /* Hauteur de l'icône du menu */
+        cursor: pointer; /* Curseur indiquant que l'élément est cliquable */
+    }
+
+
+
+
+    .menuDeroulant {
+        top: 220px; /* Ajustez la position verticale du menu déroulant */
+        background-color: white;
+        border: 3px solid #134f2b; /*change la couleur de l'encadré*/
+        padding: 10px;
+        height: 200px;
+        justify-content: space-between;
+
+    }
+    #mans {
+        position: relative;
+        left: -100px;
+        top: 0;
+    }
+    #paris {
+        position: relative;
+        left: 50px;
+        top: -20px;
+    }
+    #grenoble {
+        position: relative;
+        left: 200px;
+        top: -40px;
+    }
+    #metz {
+        position: relative;
+        left: 200px;
+        top: -40px;
+    }
+    #cognac {
+        position: relative;
+        left: 50px;
+        top: -20px;
+    }
+    #toulouse {
+        position: relative;
+        left: -100px;
+        top :-60px;
+    }
+
+    .menuDeroulant .lieux {
+        display: block;
+        text-decoration: none;
+        color: #920c0c;
+        text-align: center;
+        margin-bottom: 2px;
+        font-weight: bold;
+        font-family: Titre;
+        font-size: 100%;
+    }
+    .menuDeroulant a {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: Titre;
+        font-size: 100%;
+    }
+
+
+
+    .menuDeroulant a:hover {
+        color: #a9151d; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+}
+

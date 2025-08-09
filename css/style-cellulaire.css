@@ -1,0 +1,319 @@
+@media (max-width: 1100px) {
+    body {
+        margin: 0; /* Réinitialisation des marges pour éviter les écarts */
+    }
+
+    @font-face {
+        font-family: 'titre';
+        src: url("../fonts/BerkshireSwash-Regular.ttf");
+    }
+
+    .bandeStatique {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        z-index: 2; /*on lui donne une plus grande valeur pour qu'il soit au premier plan*/
+
+    }
+
+    .logo img {
+        padding-top: 5px;
+        height: 75px;
+    }
+    .logo {
+        position: absolute;
+
+    }
+
+    .nom-du-restaurant {
+        font-family: 'titre';
+        flex: 1; /* Le texte prendra tout l'espace restant */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centrer horizontalement */
+    }
+
+    .nom-du-restaurant h1 {
+        margin: 0; /* Supprimer les marges par défaut du titre */
+        font-size: 45px; /* Taille de police du titre */
+        color: black; /* Couleur du texte */
+
+    }
+
+    .petiteBandeTricolore {
+        position: fixed;
+        z-index: 1; /*on lui donne une plus petite valeur pour qu'il soit au second  plan*/
+        top: 60px; /* Ajustez cette valeur pour aligner correctement la bande */
+        width: 100%;
+        height: 20px; /* Hauteur de la bande blanche */
+        background-color: #ffffff; /* Couleur blanche */
+        border-bottom: 15px solid #a9151d; /* Bordure blanche en dessous de la couleur verte */
+        border-top: 15px solid #134f2b; /* Bordure rouge au-dessus de la couleur verte */
+    }
+
+    .petiteBandeTricolore {
+        display: flex;
+        justify-content: space-between;
+    }
+    .petiteBandeTricolore a {
+        margin-left: auto; /* ajoute un espace entre la marge de la page et le lien*/
+        margin-right: auto;
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #000000; /* Couleur des liens */
+        font-weight: bold;
+    }
+    .petiteBandeTricolore .lienP {
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #e0c389; /* Couleur des liens */
+        font-weight: bold;
+    }
+
+    .petiteBandeTricolore a:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+
+    .menuDeroulant {
+        display: none; /*cache les liens du menu déroulant */
+    }
+
+    .menuDeroulant {
+        display: none; /* Masque initialement les liens du menu */
+        position: absolute;
+        top: 41px; /* Ajustez la position verticale du menu déroulant */
+        right: 0;
+        background-color: white;
+        border: 3px solid #134f2b; /*change la couleur de l'encadré*/
+        padding: 10px;
+
+    }
+
+    .iconeMenu:hover .menuDeroulant {
+        display: block; /* Affiche les liens du menu au survol de l'icône */
+    }
+
+    .menuDeroulant a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .menuDeroulant a:hover {
+        color: #a9151d; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+    .BandeImage {
+        display: none;
+    }
+    #BandeNosMenus{
+        padding-top:100px;
+        left: 0;
+        right: 0;
+        background-color: #e0c389;
+        height: 375px;
+
+    }
+
+    .allBox {
+        width: 100%;
+        height: 270px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+
+        flex-wrap: nowrap;
+        gap: 10%; /* Espacement entre les boîtes */
+        overflow-x: auto;
+        white-space: nowrap;
+
+    }
+
+    .box1{
+        width: 30%; /* Ajustez la largeur selon votre mise en page */
+        height: 65%;
+        background: #a9151d;
+        margin-bottom: 5%;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        overflow: hidden; /* Cache tout contenu débordant de la boîte */
+        flex: 0 0 auto; /* Empêche le redimensionnement des boîtes */
+    }
+
+    .imgNosMenus {
+        width: 100%;
+        height: 120px;
+        border: 2px solid #e0c389;
+        border-radius: 5%;
+        object-fit: cover;
+    }
+
+    .pNosMenus {
+        text-align: center;
+        font-family: 'Titre';
+        color: white;
+        font-size: 90%;
+        margin-top : 10px;
+    }
+
+
+    #BandeNouveautés{
+        left: 0;
+        right: 0;
+        background-color: white;
+        height: 375px;
+
+    }
+
+    #BandeNosRestaurants{
+        left: 0;
+        right: 0;
+        background-color: #01385e;
+        height: 375px;
+    }
+
+    #BandeNosMenus .Titre{
+        font-family: 'Titre';
+        padding-bottom: 0px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #BandeNouveautés .Titre {
+        font-family: 'Titre';
+        padding-top: 20px;
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    #BandeNosRestaurants .Titre{
+        font-family: 'Titre';
+        padding-top: 40px;
+        font-size: 40px;
+        margin-bottom: 10px; /* Réduire l'espace en bas du titre à zéro */
+        text-align: center;
+        color: white;
+
+    }
+
+    .imgResto{
+        width : 45%;
+        display: inline-block; /* Ajout pour afficher l'image en ligne avec le texte */
+        vertical-align: top; /* Alignement vertical au sommet */
+        padding-right: 25px;
+    }
+
+    .lienTrouverResto a{
+        font-family: 'Titre';
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .lienTrouverResto{
+        padding: 5px;
+        display: flex; /* Utilisation de flexbox pour aligner les éléments */
+        align-items: center; /* Aligner les éléments sur l'axe vertical */
+        padding-left: 30px;
+    }
+
+    .lienTrouverResto :hover {
+        color: #a9151d; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+
+    .LogoLocaliser{
+        width : 10%;
+    }
+
+    .NosRestos{
+        display: flex; /* Utilisation de flexbox pour les éléments internes */
+        justify-content: space-between; /* Espace égal entre les éléments internes */
+    }
+
+
+    .carres{
+        width: 100%;
+        height: 270px;
+        /* Ajout des propriétés Flexbox */
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .carre1{
+        width: 30%; /* Ajustez la largeur selon votre mise en page */
+        height: 65%;
+        background: #134f2b;
+        margin-bottom: 5%;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ImgNews {
+        width: 100%;
+        height: 70%;
+        object-fit: cover; /* Ajuste la taille de l'image pour remplir le conteneur */
+        border: 2px solid #e0c389;
+        border-radius: 5%;
+    }
+    .pNews {
+        text-align: center;
+        font-family: Titre;
+        color: white;
+        font-size: 90%;
+    }
+
+    footer {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Pour centrer horizontalement les liens */
+        padding: 5px;
+        background-color: #ffffff;
+    }
+
+    .mail, .insta, .tel{
+        font-family: 'Titre';
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center; /* Pour aligner les éléments flexibles verticalement */
+        margin: 0 20px; /* Espacement entre les liens */
+    }
+
+    .logos {
+        width: 20px; /* Taille des logos */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        margin-right: 5px; /* Espacement entre le logo et le texte */
+    }
+
+    .mail:hover, .insta:hover, .tel:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+}
+

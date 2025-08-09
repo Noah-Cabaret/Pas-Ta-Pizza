@@ -1,0 +1,275 @@
+@media (max-width: 1430px) {
+    body {
+        margin: 0; /* Réinitialisation des marges pour éviter les écarts */
+    }
+
+    @font-face {
+        font-family: 'titre';
+        src: url("../fonts/BerkshireSwash-Regular.ttf");
+    }
+
+    .bandeStatique {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        z-index: 2; /*on lui donne une plus grande valeur pour qu'il soit au premier plan*/
+
+    }
+
+    .logo img {
+        padding-top: 5px;
+        height: 75px;
+    }
+
+    .nom-du-restaurant {
+        font-family: 'titre';
+        flex: 1; /* Le texte prendra tout l'espace restant */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centrer horizontalement */
+    }
+
+    .nom-du-restaurant h1 {
+        margin: 0; /* Supprimer les marges par défaut du titre */
+        font-size: 40px; /* Taille de police du titre */
+        color: black; /* Couleur du texte */
+        padding-right: 9%;
+    }
+
+    .petiteBandeTricolore {
+        position: fixed;
+        z-index: 1; /*on lui donne une plus petite valeur pour qu'il soit au second  plan*/
+        top: 60px; /* Ajustez cette valeur pour aligner correctement la bande */
+        width: 100%;
+        height: 20px; /* Hauteur de la bande blanche */
+        background-color: #ffffff; /* Couleur blanche */
+        border-bottom: 15px solid #a9151d; /* Bordure blanche en dessous de la couleur verte */
+        border-top: 15px solid #134f2b; /* Bordure rouge au-dessus de la couleur verte */
+    }
+
+    .petiteBandeTricolore {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .petiteBandeTricolore a {
+        margin-left: auto; /* ajoute un espace entre la marge de la page et le lien*/
+        margin-right: auto;
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #000000; /* Couleur des liens */
+        font-weight: bold;
+    }
+
+    .petiteBandeTricolore .lienP {
+        text-decoration: none; /* Supprime les soulignements par défaut des liens */
+        color: #e0c389; /* Couleur des liens */
+        font-weight: bold;
+    }
+
+    .petiteBandeTricolore a:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+
+    .menuDeroulant {
+        display: none; /*cache les liens du menu déroulant */
+    }
+
+    .menuDeroulant {
+        display: none; /* Masque initialement les liens du menu */
+        position: absolute;
+        top: 41px; /* Ajustez la position verticale du menu déroulant */
+        right: 0;
+        background-color: white;
+        border: 3px solid #134f2b; /*change la couleur de l'encadré*/
+        padding: 10px;
+
+    }
+
+    .iconeMenu:hover .menuDeroulant {
+        display: block; /* Affiche les liens du menu au survol de l'icône */
+    }
+
+    .menuDeroulant a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .menuDeroulant a:hover {
+        color: #a9151d; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+
+
+    .BandeBlanche1 {
+        left: 0;
+        right: 0;
+        background-color: white;
+        height: 400px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .BandeBlanche1 p {
+        color: #134f2b;
+        font-size: 30%;
+        margin: auto;
+
+    }
+
+    .BandeBlanche1 .Titre {
+        font-family: 'Titre';
+        font-size: 70%;
+        margin-top: 30%;
+
+    }
+
+    .BandeJaune {
+        left: 0;
+        right: 0;
+        background-color: #e0c389;
+        height: 400px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+
+    .BandeJaune .Titre {
+        font-family: 'Titre';
+        font-size: 70%;
+        margin: auto;
+
+    }
+
+    .BandeJaune p {
+        color: #a9151d;
+        font-size: 30%;
+        margin: auto;
+
+    }
+
+    .BandeBlanche2 {
+        left: 0;
+        right: 0;
+        background-color: white;
+        height: 400px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .BandeBlanche2 .Titre {
+        font-family: 'Titre';
+        font-size: 70%;
+        margin: auto;
+
+    }
+
+    .BandeBlanche2 p {
+        color: #01385e;
+        font-size: 30%;
+        margin: auto;
+
+    }
+
+    .BandeBleu {
+        left: 0;
+        right: 0;
+        background-color: #01385e;
+        height: 400px;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 50px;
+
+    }
+
+    .BandeBleu p {
+        color: white;
+        font-size: 30%;
+        margin: auto;
+
+    }
+
+    .BandeBleu .Titre {
+        font-family: 'Titre';
+        padding-bottom: 5%;
+        font-size: 70%;
+        margin: auto;
+    }
+
+    .BandeVerte {
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+
+    }
+
+    .BandeVerte .Titre {
+        font-family: 'Titre';
+        padding-top: 20px;
+        font-size: 40px;
+        color: #920c0c;
+        padding-bottom: 10px;
+    }
+
+
+
+    .BandeVerte p{
+        color: #920c0c;
+        font-size: 18px;
+
+    }
+    footer {
+        margin-top: 22%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Pour centrer horizontalement les liens */
+        padding: 5px;
+        background-color: #920c0c;
+    }
+    .mail, .insta, .tel{
+        font-family: 'Titre';
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center; /* Pour aligner les éléments flexibles verticalement */
+        margin: 0 20px; /* Espacement entre les liens */
+    }
+
+    .logos {
+        width: 20px; /* Taille des logos */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        margin-right: 5px; /* Espacement entre le logo et le texte */
+    }
+
+    .mail:hover, .insta:hover, .tel:hover {
+        color: #e0c389; /* Change la couleur du texte au survol */
+        transition: 0.5s; /*ajoute un effet lorsqu'on met le curseur sur le texte*/
+        cursor: pointer;
+    }
+}
+
